@@ -1,8 +1,12 @@
 # project-Rock-Paper-Scissors-
 import random
 
+
+#player - referring to you the user
+#CPU - referring to the computer 
+
 def play ():
-    Player = input("What is your choice? 'R for Rock, 'P for Paper, 'S for Scissors\n")
+    Player = input("Choose one of these? 'R for Rock, 'P for Paper, 'S for Scissors\n")
     Player + Player.upper()
 
     CPU = random.choice(['R', 'P', 'S'])
@@ -17,9 +21,9 @@ def play ():
             return "You have {} and the CPU has chosen. You LOSE!", format(Player, CPU)
 
             def is_win(player, CPU):
-                #return true is the player beats the CPU
-                #winning condition R>S, S>P, P>R
-                if(player == 'R' and CPU == 'S') or (player == 'S' and CPU =='P') or (player =='P' and CPU =='R'):
+                #return true if the player beats the CPU
+                #for the winning condition; we have; R>S, S>P, P>R
+     if (Player == 'R' and CPU == 'S', Player == 'S' and CPU =='P', Player =='P' and CPU =='R'):
 
                 return True
                 return False
